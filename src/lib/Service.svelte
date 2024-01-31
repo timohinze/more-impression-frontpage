@@ -109,7 +109,7 @@ function toggleOpen(){
 
 
     <div class="toggle-content">
-    <div class="intro">{content.intro}
+    <div class="intro">{@html content.intro}
     </div>
 
 
@@ -128,8 +128,8 @@ function toggleOpen(){
 
                 {#if i% 2 !=0}
                 <div class="caption">
-                        {i}  {bilder[i-1].caption}<br>
-                        {i+1} {bild.caption}
+                        <span class="nummer">{i}</span>  {@html bilder[i-1].caption}<br>
+                        <span class="nummer">{i+1}</span>  {@html bild.caption}
                 </div>
                  {/if}
             </div>
@@ -139,7 +139,7 @@ function toggleOpen(){
     </div>
 
     <div class="text">
-    {content.text}
+    {@html content.text}
   
       </div>
 
@@ -291,7 +291,13 @@ text-align: right;
     border-top: 1px solid;
 }
 .caption{
+margin-top: 2rem;
+margin-bottom: 2rem;
     position: relative;
+}
+
+.caption .nummer{
+    margin-right: 0.75rem;
 }
 
 .caption ol{
@@ -301,6 +307,6 @@ text-align: right;
     padding-left: 1rem;
 }
 .text{
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 </style>

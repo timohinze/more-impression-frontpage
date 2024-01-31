@@ -1,3 +1,7 @@
+<script>
+    import headerImg from '$lib/assets/img/IMG_E0969low.jpg'
+</script>
+
 <section>
     <div class="wrapper">
 <div class="text">
@@ -12,7 +16,7 @@
 
 </div>
 <div class="bild">
-    <img src="https://picsum.photos/900/1400">
+    <img src={headerImg} />
 </div>  
 
 </div>
@@ -61,14 +65,13 @@ text-indent: -3rem;
     }
 img{
     position: absolute;
-    left: -13vw;
+    left: -25vw;
     top: 1.5rem;
     right: 0;
     width: auto;
     height: 100%;
     bottom: 0;
     max-width: none;
-    opacity: 0.6;
 }
 
 </style>

@@ -2,53 +2,54 @@
 // Platzhalter Content kommt raus
 
 
+
 export const content={
-    "titel": "Handsatz",
-    "titelEn": "Letterpress",
+    "titel": "Buchdruck",
+    "titelEn": "Letterpress printing",
     "topline": "Service",
     "toplineEn": "Service",
-    "intro": "Wir arbeiten mit beweglichen Lettern, die zum Satz ausgebunden und nach dem Druck wieder abgelegt werden. Jedes Zeichen ist ein fassbares Objekt mit einer begrenzte Lebensdauer – es führt ein Eigenleben und taucht in unterschiedlichen Wörtern und Texten auf. Schrift ist im Handsatz kein Phänomen auf Programmoberflächen. Unsere 51 Schriften in unterschiedlichen Schnitten und Punktgrößen, auf dem Rechner kaum 1 MB schwer, füllen 8 Setzregale mit etwa 3 Tonnen Material. ",
+    "intro": "Wir drucken mit brillianten Volltonfarben bis zu einem A3-Überformat. Auf jede Farbe kommt eine gesetzte Form und ein Druckdurchgang. Eine mehrfarbige Karte ist eine mehrtägige Arbeit für die Druckerin. Buchdruck ist ein Hochdruckverfahren. Unsere Vandercook-Andruckpresse (Chicago, Illinois) aus dem Jahre 1950 verfügt über ein höhenverstellbares Fundament und wir können deshalb relativ einfach auch Holz- oder Linolschnitte und jegliche erhabene Materialien wie Nyloklischees, Schallplatten und Legosteine drucken.",
     "introEn": "En Intro",
     "text": "Text De",
     "textEn": "Text En",
-    "sticker": "Testen Sie unseren <br> Online Handsatz Generator",
-    "stickerEn": "Test our online <br> letterpress generator",
+    "sticker": "Besuchen Sie unseren <br> Shop",
+    "stickerEn": "Visit our online <br> shop",
 }
 
 
-export const bilder= 
+export const bilder=
 [
     {
-        "src": "IMG_2047low.jpg",
-        "caption": "Caption Lorem Ipsum",
+        "src": "IMG_2956low.jpg",
+        "caption": "<i>Relax Baby Be Cool,</i> Poster für: Anngeret Frauenlob: Hits! – Printmakers Top Ten, 35,6 × 53,3 cm, Essen, 2023",
         "captionEn": "En Lorem Ipsum"
     },
     {
-       "src": "IMG_4006low.jpg",
-       "caption": "Lorem Ipsum",
+       "src": "IMG_2953low.jpg",
+       "caption": "Satz des Poster <i>Relax Baby Be Cool</i> in der Andruckpresse, 2023",
        "captionEn": "En Lorem Ipsum"
 
     },
     {
-        "src": "Mondrian_Posterlow.jpg",
-        "caption": "Lorem Ipsum",
+        "src": "IMG_3588low.jpg",
+        "caption": "Laptop auf dem Farbstein, 2023",
         "captionEn": "En Lorem Ipsum"
     },
     {
-       "src": "IMG_2455low.jpg",
-       "caption": "Lorem Ipsum",
+       "src": "IMG_2381low.jpg",
+       "caption": "Andruckpresse beim Einzug in die neue Werkstatt, 2023, Foto: Anke Schwarz",
        "captionEn": "En Lorem Ipsum"
 
     },
     {
-        "src": "IMG_1256low.jpg",
-        "caption": "Lorem Ipsum",
+        "src": "IMG_7024low.jpg",
+        "caption": "Farbstein, 2023",
         "captionEn": "En Lorem Ipsum"
     },
     {
-       "src": "IMG_3355low.jpg",
+       "src": "IMG_7018low.jpg",
        "caption": "Lorem Ipsum",
-       "captionEn": "En Lorem Ipsum"
+       "captionEn": "Farbproben und Pantonefächer 2021"
 
     },
 ]
