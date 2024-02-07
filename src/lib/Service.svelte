@@ -12,7 +12,8 @@ import syncHeight from "$lib/syncHeight";
 import { tweened } from "svelte/motion";
 
 
-let bildOrdner = "./src/lib/assets/img/";
+let bildOrdner = 'assets/img/';
+
 
 
 import '../styles/app.css'
@@ -109,7 +110,7 @@ function toggleOpen(){
 
 
     <div class="toggle-content">
-    <div class="intro">{content.intro}
+    <div class="intro">{@html content.intro}
     </div>
 
 
@@ -128,8 +129,8 @@ function toggleOpen(){
 
                 {#if i% 2 !=0}
                 <div class="caption">
-                        {i}  {bilder[i-1].caption}<br>
-                        {i+1} {bild.caption}
+                        <span class="nummer">{i}</span>  {@html bilder[i-1].caption}<br>
+                        <span class="nummer">{i+1}</span>  {@html bild.caption}
                 </div>
                  {/if}
             </div>
@@ -139,7 +140,7 @@ function toggleOpen(){
     </div>
 
     <div class="text">
-    {content.text}
+    {@html content.text}
   
       </div>
 
@@ -207,6 +208,7 @@ h2{
 }
 
     .intro{
+        margin-left: 2rem;
         padding-top: 1.5rem;
         font-size: 1.2rem;
         max-width: 70ch;
@@ -236,15 +238,21 @@ font-size: 1.5rem;
 height: 600px;
 text-align: right;
     writing-mode: vertical-lr;
+/* 
+    transition: height 1s; */
 
-    transition: height 1s;
 
 
+
+    position: absolute;
+    bottom: 0;
+    border-right: 1px solid;
+    height: 100%;
 }
 
 .toggle-content{
     position: relative;
-    padding-left: 1.5rem;
+    padding-left: 3rem;
     padding-right: 1.5rem;
 }
 
@@ -259,24 +267,27 @@ text-align: right;
     z-index: 9;
 }
 
-.open .reiter{
+/* .open .reiter{
     position: sticky;
     height: 100%;
-}
+} */
 
 .outerwrapper{
+    min-height: 400px;
     overflow: hidden;
 }
 
-.outerwrapper.open{
+/* .outerwrapper.open{
     overflow: unset;
-}
+} */
 
 
 .toggle-btn button{
     all:unset;
     margin-left: 3rem;
     font-size: 1.35rem;
+
+    cursor: pointer;
 
 
 }
@@ -291,7 +302,13 @@ text-align: right;
     border-top: 1px solid;
 }
 .caption{
+margin-top: 2rem;
+margin-bottom: 2rem;
     position: relative;
+}
+
+.caption .nummer{
+    margin-right: 0.75rem;
 }
 
 .caption ol{
@@ -301,6 +318,7 @@ text-align: right;
     padding-left: 1rem;
 }
 .text{
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
 }
 </style>
