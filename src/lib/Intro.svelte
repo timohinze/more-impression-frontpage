@@ -1,5 +1,4 @@
 <script>
-    import headerImg from '$lib/assets/img/IMG_E0969low.jpg'
 </script>
 
 <section>
@@ -16,7 +15,7 @@
 
 </div>
 <div class="bild">
-    <img src={headerImg} />
+    <img src="assets/img/IMG_E0969low.jpg" />
 </div>  
 
 </div>

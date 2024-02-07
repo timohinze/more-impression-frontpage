@@ -22,7 +22,12 @@ import  {content as grafikContent} from '../data/grafik'
 
 import {bilder as kollaborationBilder} from '../data/kollaboration';
 import  {content as kollaborationContent} from '../data/kollaboration'
-	import Footer from "../lib/Footer.svelte";
+
+import {bilder as biografieBilder} from '../data/biografie';
+import  {content as biografieContent} from '../data/biografie'
+
+
+import Footer from "../lib/Footer.svelte";
 
 
 </script>
@@ -42,5 +47,7 @@ import  {content as kollaborationContent} from '../data/kollaboration'
 <Service content={grafikContent} bilder = {grafikBilder}/>
 
 <Service content={kollaborationContent} bilder = {kollaborationBilder}/>
+
+<Service content={biografieContent} bilder = {biografieBilder}/>
 
 <Footer/>

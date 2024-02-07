@@ -12,7 +12,8 @@ import syncHeight from "$lib/syncHeight";
 import { tweened } from "svelte/motion";
 
 
-let bildOrdner = "./src/lib/assets/img/";
+let bildOrdner = 'assets/img/';
+
 
 
 import '../styles/app.css'
@@ -207,6 +208,7 @@ h2{
 }
 
     .intro{
+        margin-left: 2rem;
         padding-top: 1.5rem;
         font-size: 1.2rem;
         max-width: 70ch;
@@ -236,15 +238,21 @@ font-size: 1.5rem;
 height: 600px;
 text-align: right;
     writing-mode: vertical-lr;
+/* 
+    transition: height 1s; */
 
-    transition: height 1s;
 
 
+
+    position: absolute;
+    bottom: 0;
+    border-right: 1px solid;
+    height: 100%;
 }
 
 .toggle-content{
     position: relative;
-    padding-left: 1.5rem;
+    padding-left: 3rem;
     padding-right: 1.5rem;
 }
 
@@ -259,24 +267,27 @@ text-align: right;
     z-index: 9;
 }
 
-.open .reiter{
+/* .open .reiter{
     position: sticky;
     height: 100%;
-}
+} */
 
 .outerwrapper{
+    min-height: 400px;
     overflow: hidden;
 }
 
-.outerwrapper.open{
+/* .outerwrapper.open{
     overflow: unset;
-}
+} */
 
 
 .toggle-btn button{
     all:unset;
     margin-left: 3rem;
     font-size: 1.35rem;
+
+    cursor: pointer;
 
 
 }
@@ -308,5 +319,6 @@ margin-bottom: 2rem;
 }
 .text{
     margin-bottom: 2rem;
+    margin-left: 2rem;
 }
 </style>
